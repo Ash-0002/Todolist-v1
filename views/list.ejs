@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ToDo List</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<%- include("header") -%> 
 
     <div class="box" id="heading">
         <h1><%= listTitle %> </h1>
@@ -25,6 +17,6 @@
             <button type="submit" name="list" value= <%= listTitle %> >+</button>
         </form>
     </div>
-    
-</body>
-</html>
+
+    <%- include("footer") -%> 
+

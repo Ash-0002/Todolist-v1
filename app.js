@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const { ppid } = require("process");
 const date = require(__dirname + "/date.js");
 
 const app = express();
@@ -37,6 +38,10 @@ app.post("/work", function (req, res) {
     const item = req.body.newItem;
     workItems.push(item);
     res.redirect("/work");
+});
+
+app.get("/about", function(req, res) {
+    res.render("about");
 })
 
 app.listen(5000, function () {
