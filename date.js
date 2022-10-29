@@ -18,7 +18,7 @@ exports.getDay = function() {
     const today = new Date();
     
     const options = {
-        weekday: "long",
+        weekday: "long", 
          
     };
     
